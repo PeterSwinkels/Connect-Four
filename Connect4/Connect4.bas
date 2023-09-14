@@ -522,7 +522,7 @@ Static CurrentInterface As Form
          .Left = (Screen.Width / 2) - (.Width / 2)
          .Top = (Screen.Height / 2) - (.Height / 2)
          
-         .Caption = Empty
+         .Caption = vbNullString
       End With
    End If
 
@@ -752,7 +752,7 @@ Private Function StateText() As String
 On Error GoTo ErrorTrap
 Dim Text As String
 
-   Text = Empty
+   Text = vbNullString
    Select Case GetGameState()
       Case GameStatesE.GSNeitherPlaying
          Text = "Inactive. - Press any key."
